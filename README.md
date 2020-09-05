@@ -3,5 +3,8 @@
 
 # Initializing vtutil
 
-I think you should use an
-`<addr>` element here instead.
+`import vtutil`
+
+`vt3 = vtutil.VTUtilsV3("Your VT API KEY")` to instantiate V3 API
+`vt2 = vtutil.VTUtilsV2("Your VT API KEY")` to instantiate V2 API
+
