@@ -157,7 +157,7 @@ def main(args):
 
 
 def get_args():
-    parser = argparse.ArgumentParser(description="This is a tool to for Virustotal")
+    parser = argparse.ArgumentParser(description="This is a utility for vtutil use cases")
     parser.add_argument('--get_hunt_notifications', action='store_true',
                         help="Get files hit by your livehunt rules. You can use this in conjunction with --filter")
     parser.add_argument('--filter', type=str,
