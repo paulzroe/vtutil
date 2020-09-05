@@ -12,7 +12,7 @@
 
 #### Getting File Report 
 
-`vt3.getfileReportv3("hash_of_file"))``
+`vt3.getfileReportv3("hash_of_file"))`
 
 #### Getting File Behavior
 
