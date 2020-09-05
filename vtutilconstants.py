@@ -14,6 +14,8 @@ CATEGORY = {"Trojan": 0,
             "PUA": 0
             }
 
+TRENNER = [".", ":", "-", "~", "@", "!", "/", "_", ";", "[", "]", "(", ")"]
+
 AVEXCLUTIONLIST = ['Baidu-International',
                    'NANO-Antivirus',
                    'Zoner',
@@ -144,7 +146,7 @@ MAPPING = {" loader": "trojdownloader",
            "banker": "trojan",
            "bkdr": "backdoor",
            "trj-spy": "trojspy",
-           "nfostealer": "trojspy",
+           "infostealer": "trojspy",
            "trojan-spy": "trojspy",
            "trojan.spy": "trojspy",
            "spy ": "trojspy",
@@ -292,6 +294,7 @@ KNOWN_ADWARE_LIST = ['graftor',
                      'dealply',
                      'shedun']
 
-MS_FAMILY_GENERIC = ['skeeyah', 'tiggre', 'dynamer', 'dorv', 'occamy']
+MS_FAMILY_GENERIC = ['skeeyah', 'tiggre', 'dynamer', 'dorv', 'occamy', 'wacatac', 'wacapew', 'caynamer']
+MALWAREBYTES_GENERIC = ['malpack', 'agent', 'bot']
 
 MS_FAMILY_BLACKLIST = ['AndroidOS/LockScreen!rfn']
