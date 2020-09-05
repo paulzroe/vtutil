@@ -98,3 +98,47 @@ sha256: 7c88f52c679aeb917f52a42b5424f5aeb90901cd44d00fe9aa0608e4f2940cb4
 {redacted}
 
   ```
+
+#### Get information about the hashes that hit with your hunting rules
+
+`python vttool.py --get_hunt_notifications --filter "vba_agressive_hunt"` # vba_agressive_hunt is the name of your livehunt rule
+
+```
+---------------------------------+----+--------------------+----------------------------------------------------------------------------------------------------+----------
+md5                              |hits|rule                |Details                                                                                             |first_seen
+---------------------------------+----+--------------------+----------------------------------------------------------------------------------------------------+----------
+00f7cf1c64f887618901e20cdf4211c0 |40  |vba_agressive_hunt  |MALWARE_NAME: TrojanDownloader.emotet                                                               |2020-09-01
+                                 |    |                    |NAME: PO# 09012020Ex.doc                                                                            |16:54:25
+                                 |    |                    |FILE_TYPE: MS Word Document                                                                         |
+                                 |    |                    |TAGS: obfuscated,doc,macros,executes-dropped-file,hide-app,create-ole                               |
+                                 |    |                    |NAMES: PO# 09012020Ex.doc                                                                           |
+---------------------------------+----+--------------------+----------------------------------------------------------------------------------------------------+----------
+24566d86cde863786f1545db08a35a1e |34  |vba_agressive_hunt  |MALWARE_NAME: TrojanDownloader.emotet                                                               |2020-09-03
+                                 |    |                    |NAME: ARC 20200903 52144.doc                                                                        |19:12:11
+                                 |    |                    |FILE_TYPE: MS Word Document                                                                         |
+                                 |    |                    |TAGS: obfuscated,doc,macros,executes-dropped-file,hide-app,create-ole                               |
+                                 |    |                    |NAMES: ARC 20200903 52144.doc,emotet_e1_490fef6aff98d6e725d22acf348a7bc81c7e8b0fc299d29ff5f1f2233725|
+                                 |    |                    |af2c_2020-09-03__111206._doc_20200903_063200                                                        |
+---------------------------------+----+--------------------+----------------------------------------------------------------------------------------------------+----------
+339c109600ff5fb54e3f120ba565360f |33  |vba_agressive_hunt  |MALWARE_NAME: TrojanDownloader.emotet                                                               |2020-09-03
+                                 |    |                    |NAME: /tmp/eml_attach_for_scan/339c109600ff5fb54e3f120ba565360f.file                                |16:27:23
+                                 |    |                    |FILE_TYPE: MS Word Document                                                                         |
+                                 |    |                    |TAGS: obfuscated,doc,macros,executes-dropped-file,hide-app,create-ole                               |
+                                 |    |                    |NAMES: /tmp/eml_attach_for_scan/339c109600ff5fb54e3f120ba565360f.file                               |
+---------------------------------+----+--------------------+----------------------------------------------------------------------------------------------------+----------
+e07eb7e323630356f13dde1c7997f431 |36  |vba_agressive_hunt  |MALWARE_NAME: TrojanDownloader.emotet                                                               |2020-09-04
+                                 |    |                    |NAME: 2764 WLJ 請求書送付のお願い.doc                                                                        |14:46:39
+                                 |    |                    |FILE_TYPE: MS Word Document                                                                         |
+                                 |    |                    |TAGS: obfuscated,macros,doc,hide-app,create-ole                                                     |
+                                 |    |                    |NAMES: 2764 WLJ 請求書送付のお願い.doc                                                                       |
+---------------------------------+----+--------------------+----------------------------------------------------------------------------------------------------+----------
+
+323faa41386ee0dbabe2008e1f52db78 |38  |vba_agressive_hunt  |MALWARE_NAME: TrojanDownloader.obfuse                                                               |2020-08-21
+                                 |    |                    |NAME: Contract_772.doc                                                                              |19:47:39
+                                 |    |                    |FILE_TYPE: MS Word Document                                                                         |
+                                 |    |                    |TAGS: enum-windows,exe-pattern,doc,macros,run-dll,download                                          |
+                                 |    |                    |NAMES: Contract_772.doc                                                                             |
+---------------------------------+----+--------------------+----------------------------------------------------------------------------------------------------+----------
+{redacted}
+
+```
